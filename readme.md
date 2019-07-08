@@ -1,4 +1,4 @@
-**This repository contains a complete pipeline that training a seq2seq model needs, including training a model, and do the test.**
+**This repository contains a complete pipeline that training a seq2seq model needs, including training a model, and doing the test.**
 ## what you need to run the code
 tensorflow and [opennmt(tensorflow version)](https://github.com/OpenNMT/OpenNMT-tf)
 ## A summary of this code
@@ -11,9 +11,9 @@ i.e, the target sentence is a character-level-3-right-shift of the source senten
 ### train and test
 each toy_main_\[num\].py has similar content, but implements different seq2seq model.
 
-Train: `python toy_main_\[num\].py --is_train True`
+Train: `python toy_main_[num].py --is_train True`
 
-Test: `python toy_main_\[num\].py --is_train False`
+Test: `python toy_main_[num].py --is_train False`
 
 
 ### Result comparison
