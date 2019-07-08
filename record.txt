@@ -1,0 +1,22 @@
+
+common parameters：
+num_epochs: 100
+batch_size: 32
+print_period: 10
+embed_size: 30
+rnn_size: 512
+lr: 0.0002
+training data size：1000
+
+model                             | bleu
+--------------------------------------
+1 layer, unidirectional           | 10.085, 72.192/17.779/4.773/1.698
+--------------------------------------
+2 layers, unidirectional          | 3.520, 68.510/14.172/1.871/0.085
+--------------------------------------
+1 layer, bidirectional            | 11.439, 77.093/20.223/5.542/2.183
+--------------------------------------
+1 layer, bidirectional, attention | 99.932, 100.000/100.000/100.000/100.000
+
+The reason why seq2seq with attention mechanism has such brilliant effect lies in the character of the manually created data.
+
